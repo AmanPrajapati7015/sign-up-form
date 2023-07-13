@@ -1,23 +1,71 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Norse-Bold;
+    src: url(./fonts/Norse-Bold.otf);
 }
 
 
 body{
     background-color: #87ceeb;
     display: flex;
-    height: 100vh;
+    height: 1000px;
     align-items: stretch;
 }
 div.image{
-    flex-grow: 3;
+    width: 35%;
     background-image: url("./images/leaves.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    position: relative;
+    color: white;
+
 }
+
+div.logo-content{
+    height: 120px;
+    padding: 20px;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    background-color: rgba(0,0,0, 0.5);
+    position: relative;
+    top:170px
+}
+
+
+div.logo-content h2{
+    align-self: center;
+    font-size: 90px;
+    font-family: "Norse-Bold",  Helvetica, sans-serif;
+}
+
+.credit{
+    position: absolute;
+    display: block;
+    text-align: center;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    font-family:  Helvetica, sans-serif;   
+}
+
+a, a:visited{
+    color: white;
+}
+
+
+
+
+
 div.text{
-    flex-grow: 7;
+    width: 65%;
 }
+
+
+
+

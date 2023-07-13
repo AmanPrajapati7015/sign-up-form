@@ -10,7 +10,6 @@
 
 
 body{
-    background-color: #87ceeb;
     display: flex;
     height: 1000px;
     align-items: stretch;
@@ -55,7 +54,7 @@ div.logo-content h2{
 }
 
 a, a:visited{
-    color: white;
+    color: inherit;
 }
 
 
@@ -64,8 +63,113 @@ a, a:visited{
 
 div.text{
     width: 65%;
+    background-color: rgb(251, 251, 251);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.header{
+    background-color: rgb(251, 251, 251);
+    padding: 130px 100px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    font-weight: 700;
+    font-size: 24px;
+} 
+
+.header p{
+    max-width: 730px;
+}
+.header span.italics{
+    font-style:italic;
 }
 
 
 
 
+
+
+section.different-bg{
+    background-color: white;
+    box-shadow: 3px 3px 4px rgb(191, 191, 191);
+    margin-bottom: 30px;
+    padding: 20px 0 30px 40px;
+}
+
+section.different-bg p{
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.fields {
+    display: flex;
+    gap:60px;
+    flex-wrap: wrap;
+}
+.fields-row{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.field{
+    display: flex;
+    flex-direction: column;
+    gap:3px;
+}
+.field label{
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+.field input{
+    font-size: 18px;
+    outline: none;
+    padding: 4px;
+    border: 1px #E5E7EB solid;
+    border-radius: 3px;
+}
+
+
+.field input.error{
+    border-color: red;
+}
+
+.field input:focus{
+    border-color: rgb(0, 85, 255);
+    box-shadow: 3px 3px 4px rgb(191, 191, 191);
+}
+
+
+
+
+
+
+button[type="submit"], span.already{
+    margin-left: 40px;
+    margin-bottom: 50px;
+    font-size: 18px;
+}
+
+button[type="submit"]{
+    background-color: #596D48;
+    padding: 12px 40px;
+    border: 2px #596D48 solid ;
+    box-shadow: 3px 3px 4px rgb(191, 191, 191);
+
+    border-radius: 8px;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+}
+button[type="submit"]:hover{
+    color:#596D48;
+    background-color: white;
+}
+
+span.already a{
+    color: #596D48;
+    font-weight: 700;
+    text-decoration: none;
+
+}

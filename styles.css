@@ -173,3 +173,11 @@ span.already a{
     text-decoration: none;
 
 }
+
+
+
+span.pswd-error{
+    font-size: 13px;
+    color:red;
+    display: none;
+}

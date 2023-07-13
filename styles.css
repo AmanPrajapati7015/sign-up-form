@@ -1,3 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
 body{
-    background-color: skyblue;
+    background-color: #87ceeb;
+    display: flex;
+    height: 100vh;
+    align-items: stretch;
+}
+div.image{
+    flex-grow: 3;
+    background-image: url("./images/leaves.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+div.text{
+    flex-grow: 7;
 }
